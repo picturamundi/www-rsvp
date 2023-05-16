@@ -3,6 +3,32 @@
     --background: rgb(230, 230, 230);
 }
 
+@font-face {
+    font-family: 'Algoist';
+    src: url('fonts/Algoist.otf') format("opentype");
+    /* src: url('font/Myfont-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/Myfont-Regular.woff2') format('woff2'),
+        url('font/Myfont-Regular.woff') format('woff'),
+        url('font/Myfont-Regular.ttf') format('truetype'),
+        url('font/Myfont-Regular.svg#Myfont-Regular') format('svg'); */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CMU Serif';
+    src: url('fonts/cmunrm.ttf') format("truetype");
+    /* src: url('font/Myfont-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/Myfont-Regular.woff2') format('woff2'),
+        url('font/Myfont-Regular.woff') format('woff'),
+        url('font/Myfont-Regular.ttf') format('truetype'),
+        url('font/Myfont-Regular.svg#Myfont-Regular') format('svg'); */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 html,
 body {
     height: 100%;
