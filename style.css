@@ -1,0 +1,50 @@
+:root {
+    --text: rgb(30, 30, 32);
+    --background: rgb(230, 230, 230);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'CMU Serif';
+    text-align: center;
+    font-size: 25px;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header {
+    font-family: 'Agloist';
+    padding: 0 0 50px 0;
+    font-size: 50px;
+    font-variant: small-caps;
+}
+
+div.links div {
+    padding: 10px;
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--text);
+}
