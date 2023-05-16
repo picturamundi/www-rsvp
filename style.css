@@ -36,7 +36,6 @@ body {
 }
 
 body {
-    opacity: 0.9;
     margin: 0px;
     color: var(--text);
     font-family: 'CMU Serif';
@@ -58,7 +57,8 @@ body,
     display: flex;
     align-items: center;
     justify-content: center;
-
+    animation-name: load;
+    animation-duration: 0.7s;
 }
 
 main {
@@ -134,6 +134,7 @@ a {
 .back {
     position: absolute;
     padding-left: 5px;
+    opacity: 0.7;
 }
 
 .back img {
@@ -176,5 +177,15 @@ a {
 
     100% {
         height: 80%;
+    }
+}
+
+@keyframes load {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
