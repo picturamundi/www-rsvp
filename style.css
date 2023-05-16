@@ -129,6 +129,12 @@ a {
     width: 13px;
 }
 
+@media only screen and (max-width: 900px) {
+    article {
+        font-size: 16px;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     body {
         font-size: 20px;
