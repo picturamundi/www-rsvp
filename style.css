@@ -29,59 +29,6 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'CMU Serif';
-    src: url('fonts/cmu/CMUSerif-Bold.eot');
-    src: url('fonts/cmu/CMUSerif-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/cmu/CMUSerif-Bold.woff2') format('woff2'),
-        url('fonts/cmu/CMUSerif-Bold.woff') format('woff'),
-        url('fonts/cmu/CMUSerif-Bold.ttf') format('truetype'),
-        url('fonts/cmu/CMUSerif-Bold.svg#CMUSerif-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'CMU Serif';
-    src: url('fonts/cmu/CMUSerif-Italic.eot');
-    src: url('fonts/cmu/CMUSerif-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/cmu/CMUSerif-Italic.woff2') format('woff2'),
-        url('fonts/cmu/CMUSerif-Italic.woff') format('woff'),
-        url('fonts/cmu/CMUSerif-Italic.ttf') format('truetype'),
-        url('fonts/cmu/CMUSerif-Italic.svg#CMUSerif-Italic') format('svg');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-/* @font-face {
-    font-family: 'fonts/cmu/CMU Serif Upright';
-    src: url('fonts/cmu/CMUSerif-UprightItalic.eot');
-    src: url('fonts/cmu/CMUSerif-UprightItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/cmu/CMUSerif-UprightItalic.woff2') format('woff2'),
-        url('fonts/cmu/CMUSerif-UprightItalic.woff') format('woff'),
-        url('fonts/cmu/CMUSerif-UprightItalic.ttf') format('truetype'),
-        url('fonts/cmu/CMUSerif-UprightItalic.svg#CMUSerif-UprightItalic') format('svg');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-} */
-
-/* @font-face {
-    font-family: 'fonts/cmu/CMU Classical Serif';
-    src: url('fonts/cmu/CMUClassicalSerif-Italic.eot');
-    src: url('fonts/cmu/CMUClassicalSerif-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/cmu/CMUClassicalSerif-Italic.woff2') format('woff2'),
-        url('fonts/cmu/CMUClassicalSerif-Italic.woff') format('woff'),
-        url('fonts/cmu/CMUClassicalSerif-Italic.ttf') format('truetype'),
-        url('fonts/cmu/CMUClassicalSerif-Italic.svg#CMUClassicalSerif-Italic') format('svg');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-} */
-
-
 html,
 body {
     height: 100%;
@@ -89,15 +36,20 @@ body {
 }
 
 body {
-    opacity: 0.8;
+    opacity: 0.9;
     margin: 0px;
     color: var(--text);
     font-family: 'CMU Serif';
-    text-align: center;
     font-size: 25px;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+body,
+.title {
+    text-align: center;
+    width: 100%;
 }
 
 #content {
@@ -109,11 +61,34 @@ body {
 
 }
 
+main {
+    width: 600px;
+    height: 300px;
+    max-width: 80%;
+}
+
+article {
+    text-align: justify;
+    font-size: 24px;
+}
+
 header {
     font-family: 'Agloist';
     padding: 0 0 50px 0;
     font-size: 50px;
     font-variant: small-caps;
+}
+
+header,
+.back,
+.title-wrapper {
+    height: 50px;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .links {
@@ -145,6 +120,15 @@ a {
     opacity: 0.7;
 }
 
+.back {
+    position: absolute;
+    padding-left: 5px;
+}
+
+.back img {
+    width: 12px;
+}
+
 @media only screen and (max-width: 400px) {
     body {
         font-size: 20px;
@@ -152,5 +136,9 @@ a {
 
     header {
         font-size: 40px;
+    }
+
+    .rosemary img {
+        height: 80px;
     }
 }
