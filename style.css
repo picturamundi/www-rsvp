@@ -67,9 +67,15 @@ main {
     max-width: 80%;
 }
 
+main.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main.article {
     animation-name: article;
-    animation-duration: 0.7s;
+    animation-duration: 1s;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
     -ms-animation-fill-mode: forwards;
@@ -109,6 +115,7 @@ header,
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 400px;
 }
 
 .links-text {
@@ -131,7 +138,7 @@ a {
 }
 
 a:hover {
-    padding-bottom: 4px;
+    padding-bottom: 3px;
     border-bottom: 2px solid var(--text);
 }
 
@@ -144,10 +151,6 @@ a:hover {
     position: absolute;
     padding-left: 5px;
     transition: 0.2s;
-}
-
-.back a:hover {
-    margin-bottom: 5px;
 }
 
 .back img {
@@ -207,15 +210,4 @@ a:hover {
     100% {
         opacity: 1;
     }
-}
-
-@keyframes hover {
-    0% {
-        padding-bottom: 0px;
-    }
-
-    100% {
-        padding-bottom: 5px;
-    }
-
 }
