@@ -139,6 +139,7 @@ header,
 div.links div.link {
     padding: 10px;
     text-align: left;
+    font-size: 25px;
 }
 
 a {
@@ -176,7 +177,7 @@ a:hover {
 
 .watermark {
     position: fixed;
-    top: 0px;
+    bottom: 0px;
     right: 0px;
     padding: 50px;
     opacity: 0.7;
@@ -197,7 +198,7 @@ label {
     font-size: 16px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
     article {
         font-size: 17px;
     }
@@ -205,6 +206,20 @@ label {
     header {
         margin-bottom: 30px;
     }
+
+    .watermark img {
+        width: 150px;
+    }
+
+    header,
+    header.home {
+        font-size: 40px;
+    }
+
+    div.links div.link {
+        font-size: 20px;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -212,12 +227,14 @@ label {
         font-size: 20px;
     }
 
-    header {
-        font-size: 40px;
-    }
-
     .rosemary img {
         height: 80px;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .watermark {
+        display: none;
     }
 }
 
