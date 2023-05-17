@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RSVP</title>
+</head>
+
+<body>
+    <div id="content">
+        <main>
+            <header>Répondez S<span style="font-family: 'CMU Serif'; font-size: 40px">&#8217;</span>il Vous
+                Plaît</header>
+            <form id="fs-frm" name="basic-rsvp-form" accept-charset="utf-8" action="https://formspree.io/f/mknaekle"
+                method="POST">
+                <fieldset id="fs-frm-inputs">
+                    <div>
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                    </div>
+                    <div>
+                        <label for="attending">Will you Attend?</label>
+                        <select name="attending" id="attending" required="">
+                            <option value="" selected="" disabled="">Select</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="plus">And with how many guests?</label>
+                        <select name="plus" id="plus" required="">
+                            <option value="0" selected="">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <input type="hidden" name="_subject" id="email-subject" value="RSVP">
+                </fieldset>
+                <input type="submit" value="RSVP">
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
