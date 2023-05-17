@@ -1,5 +1,5 @@
 :root {
-    --text: rgb(100, 100, 100);
+    --text: rgb(80, 80, 80);
     --background: white;
 }
 
@@ -106,12 +106,6 @@ header,
     height: 50px;
 }
 
-.info {
-    display: none;
-    font-size: 14px;
-    margin-bottom: 40px;
-}
-
 .title-wrapper {
     display: flex;
     justify-content: center;
@@ -198,6 +192,12 @@ label {
     font-size: 16px;
 }
 
+@media only screen and (max-width: 1300px) {
+    .watermark.article {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     article {
         font-size: 17px;
@@ -208,7 +208,7 @@ label {
     }
 
     .watermark img {
-        width: 150px;
+        width: 110px;
     }
 
     header,
