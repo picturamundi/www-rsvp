@@ -162,6 +162,7 @@ h2 {
     font-size: 24px;
     margin-top: 60px;
     font-variant: small-caps;
+    font-weight: normal;
     border-bottom: 1px solid var(--faint);
 }
 
@@ -201,6 +202,10 @@ article {
         font-size: 20px;
     }
 
+    h2 {
+        font-size: 22px;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -213,9 +218,13 @@ article {
     #rosemary img {
         width: 130px;
     }
+
+    h2 {
+        font-size: 20px;
+    }
 }
 
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 550px) {
     #rosemary {
         display: none;
     }
