@@ -95,7 +95,7 @@ main#info {
 
 header {
     font-family: 'Agloist';
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-size: 40px;
 }
 
@@ -186,7 +186,7 @@ article {
     }
 
     header {
-        margin-bottom: 35px;
+        margin-bottom: 10px;
     }
 
     #rosemary img {
@@ -224,13 +224,13 @@ article {
     }
 }
 
-@media only screen and (max-height: 800px) {
+@media only screen and (max-height: 800px) and (max-width: 1000px) {
     #rosemary img {
-        width: 170px;
+        width: 180px;
     }
 }
 
-@media only screen and (max-height: 670px) {
+@media only screen and (max-height: 670px) and (max-width: 750px) {
     #rosemary img {
         width: 140px;
     }
