@@ -224,7 +224,7 @@ article {
     }
 }
 
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 700px) {
     #rosemary img {
         width: 190px;
     }
