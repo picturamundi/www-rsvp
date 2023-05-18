@@ -171,6 +171,12 @@ article {
     overflow: scroll;
 }
 
+#info article p:not(.select-off) {
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
 @media only screen and (max-width: 700px) {
 
     body,
