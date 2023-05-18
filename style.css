@@ -1,16 +1,17 @@
 :root {
-    --text: rgb(80, 80, 80);
     --background: white;
+    --text: rgb(80, 80, 80);
+    --faint: rgb(200, 200, 200);
 }
 
 @font-face {
     font-family: 'Agloist';
-    src: url('fonts/algoist/AgloistRegular.eot');
-    src: url('fonts/algoist/AgloistRegular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/algoist/AgloistRegular.woff2') format('woff2'),
-        url('fonts/algoist/AgloistRegular.woff') format('woff'),
-        url('fonts/algoist/AgloistRegular.ttf') format('truetype'),
-        url('fonts/algoist/AgloistRegular.svg#AgloistRegular') format('svg');
+    src: url('fonts/agloist/AgloistRegular.eot');
+    src: url('fonts/agloist/AgloistRegular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/agloist/AgloistRegular.woff2') format('woff2'),
+        url('fonts/agloist/AgloistRegular.woff') format('woff'),
+        url('fonts/agloist/AgloistRegular.ttf') format('truetype'),
+        url('fonts/agloist/AgloistRegular.svg#AgloistRegular') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -32,49 +33,58 @@
 html,
 body {
     height: 100%;
-    background-color: var(--background);
+    width: 100%;
 }
 
 body {
     margin: 0px;
+    background-color: var(--background);
     color: var(--text);
     font-family: 'CMU Serif';
     font-size: 25px;
+    text-align: center;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
 
-body,
-.title {
-    text-align: center;
-    width: 100%;
+#rosemary {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 50px;
+    opacity: 0.7;
 }
 
-#content {
+#rosemary img {
+    width: 250px;
+    filter: saturate(0);
+}
+
+#main-wrapper {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     animation-name: load;
-    animation-duration: 0.5s;
+    animation-duration: 0.7s;
 }
 
 main {
     width: 600px;
-    height: 200px;
     max-width: 80%;
+    height: 200px;
 }
 
-main.home {
+main#home {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main.article {
-    animation-name: article;
+main#info {
+    animation-name: scroll;
     animation-duration: 1s;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
@@ -83,19 +93,13 @@ main.article {
     animation-fill-mode: forwards;
 }
 
-article {
-    text-align: justify;
-    font-size: 24px;
-    overflow: scroll;
-}
-
 header {
     font-family: 'Agloist';
-    margin: 0 0 50px 0;
+    margin-bottom: 50px;
     font-size: 40px;
 }
 
-header.home {
+#home header {
     font-variant: small-caps;
     font-size: 50px;
 }
@@ -110,47 +114,6 @@ header,
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-}
-
-.links-text {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-}
-
-.rosemary {
-    flex-grow: 1;
-}
-
-div.links div.link {
-    padding: 10px;
-    text-align: left;
-    font-size: 25px;
-}
-
-a {
-    color: var(--text);
-    text-decoration: none;
-    border-bottom: 1px solid var(--text);
-    transition: 0.2s;
-}
-
-a:hover {
-    padding-bottom: 3px;
-    border-bottom: 2px solid var(--text);
-}
-
-.rosemary img {
-    height: 120px;
-    opacity: 0.7;
 }
 
 .back {
@@ -169,87 +132,86 @@ a:hover {
     opacity: 1;
 }
 
-.watermark {
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    padding: 50px;
-    opacity: 0.7;
+nav.links {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: center;
+    width: 400px;
 }
 
-.watermark img {
-    width: 250px;
-}
-
-#fs-frm-inputs div {
+.link {
+    padding: 14px;
     text-align: left;
+    font-size: 25px;
 }
 
-label {
-    display: inline-block;
-    width: 300px;
-    text-align: left;
-    font-size: 16px;
+a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--text);
+    transition: 0.2s;
 }
 
-@media only screen and (max-width: 1300px) {
-    .watermark.article {
-        display: none;
-    }
+a:hover {
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--text);
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 60px;
+    font-variant: small-caps;
+    border-bottom: 1px solid var(--faint);
+}
+
+article {
+    text-align: justify;
+    font-size: 20px;
+    overflow: scroll;
 }
 
 @media only screen and (max-width: 700px) {
+
+    body,
     article {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     header {
-        margin-bottom: 30px;
+        margin-bottom: 35px;
     }
 
-    .watermark img {
-        width: 110px;
+    #rosemary img {
+        width: 180px;
     }
 
     header,
-    header.home {
+    #home header {
         font-size: 40px;
     }
 
-    div.links div.link {
+    .links div.link {
         font-size: 20px;
     }
 
 }
 
 @media only screen and (max-width: 400px) {
-    body {
-        font-size: 20px;
+
+    body,
+    article {
+        font-size: 16px;
     }
 
-    .rosemary img {
-        height: 80px;
+    #rosemary img {
+        width: 130px;
     }
 }
 
-@media only screen and (max-height: 500px) {
-    .watermark {
+@media only screen and (max-height: 600px) {
+    #rosemary {
         display: none;
-    }
-}
-
-
-@keyframes article {
-    0% {
-        height: 300px;
-    }
-
-    40% {
-        height: 300px;
-    }
-
-    100% {
-        height: 80%;
     }
 }
 
@@ -260,5 +222,19 @@ label {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        height: 200px;
+    }
+
+    40% {
+        height: 200px;
+    }
+
+    100% {
+        height: 80%;
     }
 }
