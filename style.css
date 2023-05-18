@@ -224,7 +224,7 @@ article {
     }
 }
 
-@media only screen and (max-height: 550px) {
+@media only screen and (max-height: 500px) {
     #rosemary {
         display: none;
     }
