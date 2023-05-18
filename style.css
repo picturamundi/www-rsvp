@@ -189,6 +189,10 @@ article {
         margin-bottom: 10px;
     }
 
+    #rosemary {
+        padding: 40px;
+    }
+
     #rosemary img {
         width: 180px;
     }
@@ -215,6 +219,10 @@ article {
         font-size: 16px;
     }
 
+    #rosemary {
+        padding: 30px;
+    }
+
     #rosemary img {
         width: 170px;
     }
@@ -225,12 +233,20 @@ article {
 }
 
 @media only screen and (max-height: 800px) and (max-width: 1000px) {
+    #rosemary {
+        padding: 40px;
+    }
+
     #rosemary img {
         width: 180px;
     }
 }
 
-@media only screen and (max-height: 670px) and (max-width: 750px) {
+@media only screen and (max-height: 670px) and (max-width: 780px) {
+    #rosemary {
+        padding: 25px;
+    }
+
     #rosemary img {
         width: 140px;
     }
