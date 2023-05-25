@@ -1,5 +1,5 @@
 :root {
-    --background: rgb(250, 245, 235);
+    --background: rgb(252, 245, 235);
     --text: rgb(80, 80, 80);
     --faint: rgb(200, 200, 200);
 }
@@ -61,6 +61,11 @@ body {
     width: 250px;
     filter: saturate(0);
     mix-blend-mode: darken;
+    transition: 0.3s;
+}
+
+#rosemary img:hover {
+    width: 270px;
 }
 
 #main-wrapper {
@@ -148,14 +153,14 @@ nav.links {
     font-size: 25px;
 }
 
-a {
+nav a {
     color: var(--text);
     text-decoration: none;
     border-bottom: 1px solid var(--text);
     transition: 0.2s;
 }
 
-a:hover {
+nav a:hover {
     padding-bottom: 3px;
     border-bottom: 2px solid var(--text);
 }
@@ -229,6 +234,10 @@ article {
         width: 170px;
     }
 
+    #rosemary img:hover {
+        width: 180px;
+    }
+
     h2 {
         font-size: 20px;
     }
@@ -242,6 +251,10 @@ article {
     #rosemary img {
         width: 180px;
     }
+
+    #rosemary img:hover {
+        width: 190px;
+    }
 }
 
 @media only screen and (max-height: 670px) and (max-width: 780px) {
@@ -251,6 +264,10 @@ article {
 
     #rosemary img {
         width: 140px;
+    }
+
+    #rosemary img:hover {
+        width: 150px;
     }
 }
 
