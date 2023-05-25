@@ -1,5 +1,5 @@
 :root {
-    --background: white;
+    --background: rgb(250, 245, 235);
     --text: rgb(80, 80, 80);
     --faint: rgb(200, 200, 200);
 }
@@ -49,7 +49,8 @@ body {
 }
 
 #rosemary {
-    position: fixed;
+    background-color: var(--background);
+    position: absolute;
     bottom: 0px;
     right: 0px;
     padding: 50px;
@@ -59,6 +60,7 @@ body {
 #rosemary img {
     width: 250px;
     filter: saturate(0);
+    mix-blend-mode: darken;
 }
 
 #main-wrapper {
