@@ -1,6 +1,6 @@
 :root {
     /* --background: rgb(252, 245, 235); */
-    --background: rgb(252, 245, 239);
+    --background: #fcf5ef;
     --text: rgb(80, 80, 80);
     --faint: rgb(200, 200, 200);
 }
@@ -62,7 +62,7 @@ body {
     width: 250px;
     filter: saturate(0);
     mix-blend-mode: darken;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 #rosemary img:hover {
@@ -154,9 +154,9 @@ nav.links {
 }
 
 .link {
-    padding: 14px;
+    padding: 11px;
     text-align: left;
-    font-size: 25px;
+    font-size: 24px;
 }
 
 nav a {
@@ -191,6 +191,12 @@ article {
     user-select: text;
 }
 
+#rosemary-header img {
+    width: 150px;
+    opacity: 0.8;
+    mix-blend-mode: darken;
+}
+
 @media only screen and (max-width: 700px) {
 
     body,
@@ -216,11 +222,16 @@ article {
     }
 
     .links div.link {
-        font-size: 20px;
+        font-size: 19px;
+        padding: 10px;
     }
 
     h2 {
         font-size: 22px;
+    }
+
+    #rosemary-header img {
+        width: 100px;
     }
 
 }
@@ -286,6 +297,20 @@ article {
 
 @keyframes load {
     0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rosemary-load {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
         opacity: 0;
     }
 
