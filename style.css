@@ -49,6 +49,10 @@ body {
     user-select: none;
 }
 
+.center {
+    font-weight: 600;
+}
+
 #rosemary {
     background-color: var(--background);
     position: absolute;
@@ -194,6 +198,7 @@ article {
     text-align: justify;
     font-size: 20px;
     overflow: scroll;
+    padding-bottom: 100px;
 }
 
 #info article p:not(.select-off) {
