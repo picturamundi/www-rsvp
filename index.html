@@ -19,7 +19,7 @@
 <body>
 
     <div id="rosemary">
-        <a href="rosemary.html"><img src="img/rosemary-1.jpg" alt=""></a>
+        <a onclick="rosemary()"><img src="img/rosemary-1.jpg" alt=""></a>
     </div>
     <div id="main-wrapper">
         <main id="home">
@@ -28,11 +28,153 @@
                 <div class="link"><a target="_blank"
                         href="https://docs.google.com/forms/d/e/1FAIpQLSdj7JaHWeRw-1kmVPT8_tuBSAt-tM5rYpX5O8qx1P6blCkYcw/viewform?usp=sf_link">RSVP</a>
                 </div>
-                <div class="link"><a href="info.html">Wedding info</a></div>
-                <div class="link"><a href="pictures.html">Pictures</a></div>
+                <div class="link"><a onclick="info(); infoScroll()">Wedding info</a></div>
+                <div class="link"><a onclick="pictures()">Pictures</a></div>
             </nav>
         </main>
+
+
+
+        <main id="info">
+            <header>
+                <div class="back">
+                    <a onclick="back()">
+                        <img class="back" src="img/back.svg" alt="">
+                    </a>
+                </div>
+                <div class="title-wrapper">
+                    <div class="title">Wedding info</div>
+                </div>
+            </header>
+            <article>
+                <h2>Ceremony</h2>
+                <p class="center">
+                    Saturday, 5th August 2023, 4:30 pm
+                </p>
+
+                <p>
+                    Bethany Lutheran Brethren Church<br>116 Walnut Hill Rd<br>East Hartland, CT 06027
+                </p>
+                <h2>Reception</h2>
+                <p>
+                    63 Eastwood Drive E.<br>Hartland, CT 06027
+                </p>
+                <h2>Gifts</h2>
+                <p class="select-off">
+                    Since Ellie and Matthias will be moving to France soon after the wedding, they kindly request that
+                    gifts be envelope size.
+                </p>
+                <h2>Contact</h2>
+                <p>wedding@ellie-matthias.rsvp<br>(860) 491-5625</p>
+            </article>
+        </main>
+
+
+
+
+
+
+        <main id="pictures">
+            <header>
+                <div class="back">
+                    <a onclick="back()">
+                        <img class="back" src="img/back.svg" alt="">
+                    </a>
+                </div>
+                <div class="title-wrapper">
+                    <div class="title">Pictures</div>
+                </div>
+            </header>
+            <article>
+                <div class="gallery">
+                    <img src="img/gallery/colline-1.jpeg" alt="">
+                    <img src="img/gallery/port-miou.jpeg" alt="">
+                    <img src="img/gallery/colline-2.jpg" alt="">
+                    <img src="img/gallery/ring.jpg" alt="">
+                </div>
+            </article>
+        </main>
+
+
+        <main id="rosemary-page">
+            <header>
+                <div class="back">
+                    <a onclick="back()">
+                        <img class="back" src="img/back.svg" alt="">
+                    </a>
+                </div>
+                <div class="title-wrapper">
+                    <div id="rosemary-header">
+                        <img src="img/rosemary.png" alt="">
+                    </div>
+                </div>
+            </header>
+            <article>
+                <p>
+                    Rosemary.
+                </p>
+                <p>
+                    This particular sprig was picked in the spring from a healthy bush in Aix-en-Provence for its
+                    pleasant, curved shape.
+                </p>
+                <p>
+                    Illustrated with a Noodler’s Charlie and cheap Waterman ink.
+                </p>
+            </article>
+        </main>
+
+
+
     </div>
+
+    <script type="text/javascript">
+        var pageId = "home";
+
+        function back() {
+            document.getElementById('home').style.display = "";
+            document.getElementById('rosemary').style.opacity = "0.7";
+            document.getElementById('info').style.display = "none";
+            document.getElementById('pictures').style.display = "none";
+            document.getElementById('rosemary-page').style.display = "none";
+        }
+
+        function info() {
+            var pageId = "info";
+            document.getElementById('home').style.display = "none";
+            document.getElementById('rosemary').style.opacity = "0";
+            document.getElementById(pageId).style.display = "block";
+            document.getElementById(pageId).style.animation = "load 1s, scroll-tall 1s";
+            document.getElementById(pageId).style.animationFillMode = "forwards";
+            document.getElementById(pageId).style.webkitAnimationFillMode = "forwards";
+            document.getElementById(pageId).style.mozAnimationFillMode = "forwards";
+            document.getElementById(pageId).style.msAnimationFillMode = "forwards";
+            document.getElementById(pageId).style.oAnimationFillMode = "forwards";
+        }
+        function pictures() {
+            var pageId = "pictures";
+            document.getElementById('home').style.display = "none";
+            document.getElementById('rosemary').style.opacity = "0";
+            document.getElementById(pageId).style.display = "block";
+            document.getElementById(pageId).style.animation = "load 1s, scroll-tall 1s";
+            document.getElementById(pageId).style.animationFillMode = "forwards";
+            document.getElementById(pageId).style.webkitAnimationFillMode = "forwards";
+            document.getElementById(pageId).style.mozAnimationFillMode = "forwards";
+            document.getElementById(pageId).style.msAnimationFillMode = "forwards";
+            document.getElementById(pageId).style.oAnimationFillMode = "forwards";
+        }
+        function rosemary() {
+            var pageId = "rosemary-page";
+            document.getElementById('home').style.display = "none";
+            document.getElementById('rosemary').style.opacity = "0";
+            document.getElementById(pageId).style.display = "block";
+            document.getElementById(pageId).style.animation = "load 1s, scroll-short 1s";
+            document.getElementById(pageId).style.animationFillMode = "forwards";
+            document.getElementById(pageId).style.webkitAnimationFillMode = "forwards";
+            document.getElementById(pageId).style.mozAnimationFillMode = "forwards";
+            document.getElementById(pageId).style.msAnimationFillMode = "forwards";
+            document.getElementById(pageId).style.oAnimationFillMode = "forwards";
+        }
+    </script>
 
 </body>
 
