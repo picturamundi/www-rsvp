@@ -216,9 +216,12 @@ article {
         width: 180px;
     }
 
-    header,
-    #home header {
+    header {
         font-size: 30px;
+    }
+
+    #home header {
+        font-size: 40px;
     }
 
     .links div.link {
