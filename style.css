@@ -53,6 +53,11 @@ body {
     font-weight: 600;
 }
 
+.back:hover,
+a {
+    cursor: pointer;
+}
+
 #rosemary {
     background-color: var(--background);
     position: absolute;
