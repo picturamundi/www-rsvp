@@ -27,7 +27,7 @@ function frog() {
     pageId = "frog";
     document.getElementById('pictures').style.display = "none";
     load();
-    document.title = "Tree Frog| Ellie and Matthias"
+    document.title = "Tree Frog | Ellie and Matthias"
     document.getElementById(pageId).style.animation = "load 0.5s";
     document.getElementById(pageId).style.animationFillMode = "forwards"; document.getElementById(pageId).style.mozAnimationFillMode = "forwards", msAnimationFillMode = "forwards", oAnimationFillMode = "forwards";
 }
@@ -40,7 +40,7 @@ function load() {
 
 function back() {
     document.getElementById('home').style.display = "";
-    document.getElementById('rosemary').style.opacity = "0.7";
+    document.getElementById('rosemary').style.opacity = "1";
     document.getElementById('info').style.display = "none";
     document.getElementById('pictures').style.display = "none";
     document.getElementById('rosemary-page').style.display = "none";
