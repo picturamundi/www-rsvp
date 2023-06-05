@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -126,68 +127,6 @@
 
 
     </div>
-
-    <script type="text/javascript">
-        var pageId = "home";
-
-        function back() {
-            document.getElementById('home').style.display = "";
-            document.getElementById('rosemary').style.opacity = "0.7";
-            document.getElementById('info').style.display = "none";
-            document.getElementById('pictures').style.display = "none";
-            document.getElementById('rosemary-page').style.display = "none";
-        }
-
-        function info() {
-            var pageId = "info";
-            document.getElementById('home').style.display = "none";
-            document.getElementById('rosemary').style.opacity = "0";
-            document.getElementById(pageId).style.display = "block";
-            document.getElementById(pageId).style.animation = "load 1s, scroll-tall 1s";
-            document.getElementById(pageId).style.animationFillMode = "forwards";
-            document.getElementById(pageId).style.webkitAnimationFillMode = "forwards";
-            document.getElementById(pageId).style.mozAnimationFillMode = "forwards";
-            document.getElementById(pageId).style.msAnimationFillMode = "forwards";
-            document.getElementById(pageId).style.oAnimationFillMode = "forwards";
-        }
-        function pictures() {
-            var pageId = "pictures";
-            document.getElementById('home').style.display = "none";
-            document.getElementById('rosemary').style.opacity = "0";
-            document.getElementById(pageId).style.display = "block";
-            document.getElementById(pageId).style.animation = "load 1s, scroll-tall 1s";
-            document.getElementById(pageId).style.animationFillMode = "forwards";
-            document.getElementById(pageId).style.webkitAnimationFillMode = "forwards";
-            document.getElementById(pageId).style.mozAnimationFillMode = "forwards";
-            document.getElementById(pageId).style.msAnimationFillMode = "forwards";
-            document.getElementById(pageId).style.oAnimationFillMode = "forwards";
-        }
-        function rosemary() {
-            var pageId = "rosemary-page";
-            document.getElementById('home').style.display = "none";
-            document.getElementById('rosemary').style.opacity = "0";
-            document.getElementById(pageId).style.display = "block";
-            document.getElementById(pageId).style.animation = "load 1s, scroll-short 1s";
-            document.getElementById(pageId).style.animationFillMode = "forwards";
-            document.getElementById(pageId).style.webkitAnimationFillMode = "forwards";
-            document.getElementById(pageId).style.mozAnimationFillMode = "forwards";
-            document.getElementById(pageId).style.msAnimationFillMode = "forwards";
-            document.getElementById(pageId).style.oAnimationFillMode = "forwards";
-        }
-        (function (window, location) {
-            history.replaceState(null, document.title, location.pathname + "#!/stealingyourhistory");
-            history.pushState(null, document.title, location.pathname);
-
-            window.addEventListener("popstate", function () {
-                if (location.hash === "#!/stealingyourhistory") {
-                    history.replaceState(null, document.title, location.pathname);
-                    setTimeout(function () {
-                        location.replace("index.html");
-                    }, 0);
-                }
-            }, false);
-        }(window, location));
-    </script>
 
 </body>
 

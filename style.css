@@ -61,7 +61,7 @@ a {
     right: 0px;
     padding: 50px;
     opacity: 0.7;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     animation: rosemary-load 2s;
 }
 
@@ -73,7 +73,7 @@ a {
 }
 
 #rosemary img:hover {
-    width: 260px;
+    width: 255px;
 }
 
 #main-wrapper {
