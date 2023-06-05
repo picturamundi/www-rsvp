@@ -8,6 +8,7 @@ function info() {
 
 function pictures() {
     pageId = "pictures";
+    document.getElementById('frog').style.display = "none";
     load();
     document.title = "Pictures | Ellie and Matthias"
     document.getElementById(pageId).style.animation = "load 0.5s, scroll-tall 1s";
@@ -19,6 +20,15 @@ function rosemary() {
     load();
     document.title = "Rosemary | Ellie and Matthias"
     document.getElementById(pageId).style.animation = "load 0.5s, scroll-short 1s";
+    document.getElementById(pageId).style.animationFillMode = "forwards"; document.getElementById(pageId).style.mozAnimationFillMode = "forwards", msAnimationFillMode = "forwards", oAnimationFillMode = "forwards";
+}
+
+function frog() {
+    pageId = "frog";
+    document.getElementById('pictures').style.display = "none";
+    load();
+    document.title = "Tree Frog| Ellie and Matthias"
+    document.getElementById(pageId).style.animation = "load 0.5s";
     document.getElementById(pageId).style.animationFillMode = "forwards"; document.getElementById(pageId).style.mozAnimationFillMode = "forwards", msAnimationFillMode = "forwards", oAnimationFillMode = "forwards";
 }
 
@@ -34,6 +44,7 @@ function back() {
     document.getElementById('info').style.display = "none";
     document.getElementById('pictures').style.display = "none";
     document.getElementById('rosemary-page').style.display = "none";
+    document.getElementById('frog').style.display = "none";
     document.title = "Ellie and Matthias"
 }
 
