@@ -167,8 +167,7 @@ header,
 }
 
 .back img:hover {
-    width: 16px;
-    opacity: 1;
+    width: 15px;
 }
 
 nav.links {
@@ -249,6 +248,10 @@ article {
         width: 180px;
     }
 
+    #rosemary img:hover {
+        width: 185px;
+    }
+
     header {
         font-size: 30px;
     }
@@ -288,7 +291,7 @@ article {
     }
 
     #rosemary img:hover {
-        width: 180px;
+        width: 175px;
     }
 
     h2 {
@@ -306,7 +309,7 @@ article {
     }
 
     #rosemary img:hover {
-        width: 190px;
+        width: 184px;
     }
 }
 
@@ -320,7 +323,7 @@ article {
     }
 
     #rosemary img:hover {
-        width: 150px;
+        width: 143px;
     }
 }
 

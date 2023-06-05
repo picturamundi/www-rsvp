@@ -34,6 +34,7 @@ function back() {
     document.getElementById('info').style.display = "none";
     document.getElementById('pictures').style.display = "none";
     document.getElementById('rosemary-page').style.display = "none";
+    document.title = "Ellie and Matthias"
 }
 
 (function (window, location) {
