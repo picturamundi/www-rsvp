@@ -2,30 +2,30 @@ function info() {
     pageId = "info";
     load();
     document.title = "Info | Ellie and Matthias"
+    document.getElementById(pageId).style.animation = "load 0.5s, scroll-tall 1s";
+    document.getElementById(pageId).style.animationFillMode = "forwards"; document.getElementById(pageId).style.mozAnimationFillMode = "forwards", msAnimationFillMode = "forwards", oAnimationFillMode = "forwards";
 }
 
 function pictures() {
     pageId = "pictures";
     load();
     document.title = "Pictures | Ellie and Matthias"
+    document.getElementById(pageId).style.animation = "load 0.5s, scroll-tall 1s";
+    document.getElementById(pageId).style.animationFillMode = "forwards"; document.getElementById(pageId).style.mozAnimationFillMode = "forwards", msAnimationFillMode = "forwards", oAnimationFillMode = "forwards";
 }
 
 function rosemary() {
     pageId = "rosemary-page";
     load();
     document.title = "Rosemary | Ellie and Matthias"
+    document.getElementById(pageId).style.animation = "load 0.5s, scroll-short 1s";
+    document.getElementById(pageId).style.animationFillMode = "forwards"; document.getElementById(pageId).style.mozAnimationFillMode = "forwards", msAnimationFillMode = "forwards", oAnimationFillMode = "forwards";
 }
 
 function load() {
     document.getElementById('home').style.display = "none";
     document.getElementById('rosemary').style.opacity = "0";
     document.getElementById(pageId).style.display = "block";
-    if (pageId = "rosemary-page") {
-        document.getElementById(pageId).style.animation = "load 1s, scroll-short 1s";
-    } else {
-        document.getElementById(pageId).style.animation = "load 1s, scroll-tall 1s";
-    };
-    document.getElementById(pageId).style.animationFillMode = "forwards", mozAnimationFillMode = "forwards", msAnimationFillMode = "forwards", oAnimationFillMode = "forwards";
 }
 
 function back() {
