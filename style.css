@@ -238,10 +238,10 @@ article {
 #easter-frog {
     position: absolute;
     cursor: pointer;
-    width: 6%;
-    height: 5%;
-    margin-left: 70%;
-    margin-top: calc(63.5% + 30px);
+    width: 8%;
+    height: 7%;
+    margin-left: 69%;
+    margin-top: calc(63% + 30px);
 }
 
 #frog-header img {
