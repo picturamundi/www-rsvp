@@ -2,8 +2,8 @@
     /* --background: rgb(252, 245, 235); */
     --background: #fefbf9;
     /* --background: #e1e8ef; */
-    /* --text: rgb(80, 80, 80); */
-    --text: #44647f;
+    --text: #505050;
+    /* --text: #44647f; */
     --faint: rgb(200, 200, 200);
 }
 
@@ -237,9 +237,19 @@ article {
     position: absolute;
     cursor: pointer;
     width: 8%;
-    height: 7%;
+    height: 8%;
     margin-left: 69%;
-    margin-top: calc(63% + 30px);
+    margin-top: calc(62.5% + 30px);
+    border-radius: 50%;
+    transition: 0.5s;
+    box-sizing: border-box;
+    mix-blend-mode: plus-lighter;
+}
+
+#easter-frog:hover {
+    background-color: rgb(255, 248, 207);
+    opacity: 0.5;
+    filter: blur(5px);
 }
 
 #frog-header img {
